@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components';
 import { animate } from '../../images';
 import {  robotHand, letterG, letterA, letterU, letterR, letterV,a,f,r,o,t,e,d,v,p,l,u,s,c,k}  from '../../images'
@@ -64,23 +64,23 @@ const LeftImage = styled.img`
   }
 `
 
-const Shadow = styled.span`
-  background-color: #333333b8;
-  background:linear-gradient(90deg, rgba(47,0,238,1) 21%, rgba(255,0,133,1) 80%);
+// const Shadow = styled.span`
+//   background-color: #333333b8;
+//   background:linear-gradient(90deg, rgba(47,0,238,1) 21%, rgba(255,0,133,1) 80%);
 
-  border-radius: 100%;
-  width: 70%;
-  height: 20px;
-  margin-bottom: 20px;
-  transform-style: preserve-3d;
-  filter: blur(2px);
-  @media (min-width:0px) and (max-width: 600px) {
-    width: 50%;
-    height: 10px;
+//   border-radius: 100%;
+//   width: 70%;
+//   height: 20px;
+//   margin-bottom: 20px;
+//   transform-style: preserve-3d;
+//   filter: blur(2px);
+//   @media (min-width:0px) and (max-width: 600px) {
+//     width: 50%;
+//     height: 10px;
 
-  }
+//   }
 
-`
+// `
 
 
 const Name = styled.div`

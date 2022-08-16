@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react'
+import React  from 'react'
 import styled from 'styled-components'
 import { contact } from '../../images'
-import VanillaTilt from 'vanilla-tilt';
+// import VanillaTilt from 'vanilla-tilt';
 import { animate } from '../../images';
 import { h, i, r, e, m } from '../../images';
 
@@ -200,16 +200,16 @@ const Button = styled.button`
 
 
 const Contact = ({ theme }) => {
-  const Tilt = (props) => {
-    const { options, ...rest } = props;
-    const tilt = useRef(null);
+  // const Tilt = (props) => {
+  //   const { options, ...rest } = props;
+  //   const tilt = useRef(null);
 
-    useEffect(() => {
-      VanillaTilt.init(tilt.current, options);
-    }, [options]);
+  //   useEffect(() => {
+  //     VanillaTilt.init(tilt.current, options);
+  //   }, [options]);
 
-    return <div ref={tilt} {...rest} />;
-  }
+  //   return <div ref={tilt} {...rest} />;
+  // }
   return (
     <ContactContainer style={{ background: `${theme}` }}>
       <ContatFormContainer>

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Skills.css"
-import {alllang,bootstrap,css,react,javascript,php,html} from "../../images/index"
+import {alllang,bootstrap,css,react,javascript,php} from "../../images/index"
 
 const Skills = ({theme}) => {
   return (
