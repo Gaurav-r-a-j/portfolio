@@ -4,7 +4,7 @@ import VanillaTilt from 'vanilla-tilt';
 import { fb, insta, linkedin } from '../../images'
 export const GlassCardSection = ({theme}) => {
     return (
-        <div style={{background:`${theme}`}} className="glassContainer">
+        <div id='timeline' style={{background:`${theme}`}} className="glassContainer">
             <GlassCard cardNumber="01" cardName="Gaurav raj" profession="Student" />
             <GlassCard cardNumber="02" cardName="Gaurav raj" profession="Student" />
             <GlassCard cardNumber="03" cardName="Gaurav raj" profession="Student" />

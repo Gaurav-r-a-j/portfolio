@@ -10,7 +10,7 @@
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,0.4) 17.8%, rgba(2,245,255,0.5) 100.2% );
     background-image: radial-gradient( circle farthest-corner at 32.7% 82.7%,  rgba(173,0,171,1) 8.3%, rgba(15,51,92,1) 79.4% );
     background-image: linear-gradient( 292.9deg, rgba(254,105,241,1) 28.8%, rgba(182,44,248,1) 70.4% );
-
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,rgba(5,8,114,1) 0%,rgba(7,3,53,1) 97.5% );
     position: relative;
     overflow: hidden;
     /* animation:animate 15s linear infinite forwards; */

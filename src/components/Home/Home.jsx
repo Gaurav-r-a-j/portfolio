@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Background from '../Background/Background'
 import Contact from '../Contact/Contact'
@@ -15,7 +15,7 @@ const ThemeButton = styled.button`
   font-size: 20px;
   filter: hue-rotate(105deg);
   position: fixed;
-  right: 120px;
+  right: 80px;
   top: 10px;
   z-index: 100;
 
@@ -36,27 +36,40 @@ const ThemeButton = styled.button`
   display:flex;
   align-items:center;
   justify-content:center;
+
+  /* @media (min-width: 0px) and (max-width: 600px) {
+    right: 80px;
+  } */
   
   
 `
 
 const Home = () => {
   const [theme, setTheme] = useState("")
-  // const black = "blak"
+
+  useEffect(() => {
+    let Stheme = localStorage.getItem("theme");
+      setTheme(`${Stheme}`);
+  },[])
+
+
   const changeTheme = () => {
-    if (!theme) {
-      setTheme(() => !theme && "black");
+    let newTheme = prompt("Choose your favourite color: ");
+    localStorage.setItem("theme", newTheme);
+    let Stheme = localStorage.getItem("theme");
+    if (newTheme) {
+      setTheme(`${Stheme}`);
     }
     else {
       setTheme("");
     }
-    console.log(theme)
+
   }
 
   return (
     <div className="container">
       <ThemeButton onClick={changeTheme}>{
-        {theme}==='black'?'☀️':'🌙'
+        theme === 'black' ? '🌙' : '☀️'
       }
       </ThemeButton>
       <Header />
@@ -65,8 +78,8 @@ const Home = () => {
       <Skills theme={theme} />
       <GlassCardSection theme={theme} />
       <Contact theme={theme} />
-      <Footer theme={theme}/>
-      
+      <Footer theme={theme} />
+
     </div>
   )
 }

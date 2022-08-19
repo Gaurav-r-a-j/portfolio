@@ -211,7 +211,7 @@ const Contact = ({ theme }) => {
   //   return <div ref={tilt} {...rest} />;
   // }
   return (
-    <ContactContainer style={{ background: `${theme}` }}>
+    <ContactContainer id='contact' style={{ background: `${theme}` }}>
       <ContatFormContainer>
         <Form>
           <FormHeading>

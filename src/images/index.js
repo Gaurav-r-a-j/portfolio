@@ -53,6 +53,27 @@ import project2 from "./project2.jpg"
 import project3 from "./project3.jpg"
 
 
+// project images importing here 
+
+import netflixClone from  "./pojectsImage/NetflixClone.jpg"
+import chatapp from  "./pojectsImage/Chatapp.jpg"
+import chemvigyan from  "./pojectsImage/chemvigyan.jpg"
+import facebookClone from  "./pojectsImage/facebookClone.jpg"
+import idicuss from  "./pojectsImage/idiscuss1.jpg"
+import myntraClone from  "./pojectsImage/MyntraClone.jpg"
+import notesapp from  "./pojectsImage/Notesapp.jpg"
+import portfolio1 from  "./pojectsImage/portfolio1.jpg"
+import portfolio2 from  "./pojectsImage/portfolio2.jpg"
+import postmaster from  "./pojectsImage/postmaster.jpg"
+import spotify from  "./pojectsImage/spotify.jpg"
+import spotifyHomepage from  "./pojectsImage/SpotifyHomepage.jpg"
+import sstarx from  "./pojectsImage/sstarx.jpg"
+import teachingApp from  "./pojectsImage/TeachingApp.jpg"
+import textutils from  "./pojectsImage/textutils.jpg"
+import tier3wale from  "./pojectsImage/tier3wale.jpg"
+
+
+
 
 
 
@@ -99,9 +120,20 @@ export const animate = keyframes`
 
 
 
+
+
+
+
+
+
+
+
+
 export {menu,logo ,illustration1,illustration2,robotHand,letterG,letterA,letterU,letterR,letterV,
 i,a,m,f,r,o,n,t,e,d,v,p,l,u,s,c,k,h,
 fb, insta, linkedin,
 contact,
 alllang,bootstrap,css,react,javascript,php,html,
-project1,project2,project3} 
+project1,project2,project3,
+netflixClone,portfolio1,portfolio2,sstarx,chatapp,chemvigyan,teachingApp,textutils,tier3wale,spotifyHomepage,myntraClone,facebookClone,spotify,notesapp,idicuss,postmaster
+} 

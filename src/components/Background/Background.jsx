@@ -94,6 +94,15 @@ const Name = styled.div`
   @media (min-width:0px) and (max-width: 600px) {
     width: 60%;
   }
+
+  filter:brightness(2);
+  /* filter:${theme => theme==="black" ? 'brightness(5)' : 'brightness(1)'}; */
+
+  /* ${theme => theme=='black' &&`
+    filter:brightness(5);
+    background:red;
+`
+  } */
 `
 
 const TextContainer = styled.div`
@@ -105,6 +114,7 @@ const TextContainer = styled.div`
   @media (min-width:0px) and (max-width: 600px) {
     max-width: 100%;
   }
+  filter:brightness(2);
   
 `
 
@@ -115,9 +125,6 @@ const Text = styled.img`
   transition: all 0.2s;
   padding: 3px;
   filter: invert(1);
-  /* background: -webkit-linear-gradient(90deg, rgba(47,0,238,1) 21%, rgba(255,0,133,1) 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 
   &:hover{
     transform: translateY(-20px);
@@ -133,9 +140,10 @@ const Text = styled.img`
 
 
 const Background = ({theme}) => {
+  
 
   return (
-    <Container style={{background:`${theme}`}}>
+    <Container id='home' style={{background:`${theme}`}}>
       <LeftContainer>
         <Name>
           <LeftImage src={letterG} />

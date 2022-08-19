@@ -5,7 +5,7 @@ import {alllang,bootstrap,css,react,javascript,php} from "../../images/index"
 const Skills = ({theme}) => {
   return (
 
-    <div className="content">
+    <div id='skills' className="content">
 
     
     <div className="box" style={{background:`${theme}`}}>

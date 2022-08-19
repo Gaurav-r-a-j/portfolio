@@ -75,7 +75,7 @@ span {
 .socialMedia img {
     width: 100%;
     transition: all 0.4s;
-    filter: invert(1);
+    /* filter: invert(1); */
 }
 
 .socialMedia img:hover {
